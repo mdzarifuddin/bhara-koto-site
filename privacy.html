@@ -25,6 +25,7 @@
 ও Firebase App Check (Play Integrity) ব্যবহার করে যাচাই করে যে এটি আসল অ্যাপ, তারপর Cloud Firestore থেকে চাবিটি নেয়।
 এই সময় Google ডিভাইসের অখণ্ডতার সংকেত ও IP ঠিকানা প্রক্রিয়া করতে পারে (<a href="https://firebase.google.com/support/privacy">Firebase গোপনীয়তা</a>)।
 আমরা এই বেনামী পরিচয় দিয়ে কাউকে চিনি না, কোনো প্রোফাইল বানাই না।</p>
+<p><b>ঐচ্ছিক Google সাইন ইন:</b> সেটিংসে চাইলে Google দিয়ে সাইন ইন করা যায়। সাইন ইন করলে Firebase Authentication আপনার Google ইমেইল ও নাম পায় এবং Google-এর নিজস্ব সাইন-ইন পাতা খোলে। সাইন ইন ছাড়াও অ্যাপ পুরো চলে; সাইন আউট করলে আমরা আপনার সাথে এই পরিচয়ের কোনো যোগ রাখি না। আমরা এই ইমেইল বিজ্ঞাপন বা বিশ্লেষণে ব্যবহার করি না।</p>
 <p><b>নতুন ভার্সন যাচাই:</b> সেটিংসে "নতুন ভার্সন আছে কি?" চাপলে অ্যাপ GitHub-এর পাবলিক রিলিজ পাতা দেখে; GitHub স্বাভাবিকভাবে IP ঠিকানা দেখতে পারে।</p>
 
 <h2>"ভুল জানান" রিপোর্ট</h2>
@@ -42,7 +43,7 @@
 <p>PothShathi collects no personal data and uses no analytics or ads. Fare data is downloaded over HTTPS and stored encrypted on the device.
 The decryption key is not shipped in the app: on first launch the app uses anonymous Firebase Authentication and Firebase App Check
 (Play Integrity) to confirm it is the genuine app and then reads the key from Cloud Firestore; Google may process device-integrity
-signals and the IP address for this. Settings → "Check for a new version" reads the public GitHub releases page. "Report a mistake" opens your own email app; a report is sent only if you choose to send it, and
+signals and the IP address for this. Optional Google sign-in: in Settings you may sign in with Google. Firebase Authentication then receives your Google email and name; the app works fully without signing in, and the email is never used for ads or analytics. Settings → "Check for a new version" reads the public GitHub releases page. "Report a mistake" opens your own email app; a report is sent only if you choose to send it, and
 contains only what you type, which route/stop it is about, and the app/data version. If more services are added later, this policy will be updated first. Use Settings → "Reset app data" or
 uninstall to delete everything stored on the device.</p>
 
