@@ -3,25 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>গোপনীয়তা নীতি — ভাড়া কত</title>
+<title>গোপনীয়তা নীতি — পথসাথী</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
 <h1>গোপনীয়তা নীতি / Privacy Policy</h1>
-<p class="muted">অ্যাপ: ভাড়া কত (Vara Koto) · প্রকাশক: AOS NETWORK · সর্বশেষ হালনাগাদ: ২৭ সেপ্টেম্বর ২০২৬</p>
+<p class="muted">অ্যাপ: পথসাথী (PothShathi) · প্রকাশক: AOS NETWORK · সর্বশেষ হালনাগাদ: ১০ অক্টোবর ২০২৬</p>
 
 <h2>সংক্ষেপে</h2>
 <ul>
   <li>কোনো অ্যাকাউন্ট নেই, নাম/ফোন/ইমেইল/লোকেশন সংগ্রহ করা হয় না।</li>
-  <li>অ্যাপ শুধু ভাড়ার ডেটা নামাতে ইন্টারনেট ব্যবহার করে।</li>
+  <li>অ্যাপ শুধু ভাড়ার ডেটা ও তা খোলার চাবি নামাতে ইন্টারনেট ব্যবহার করে।</li>
   <li>আপনার খোঁজা রুট ও পছন্দের তালিকা শুধু আপনার ফোনেই থাকে।</li>
 </ul>
 
 <h2>যা প্রক্রিয়া করা হয়</h2>
-<p>বর্তমান সংস্করণ (১.০) কোনো ব্যক্তিগত বা ডিভাইসের তথ্য সংগ্রহ করে না এবং কোনো তৃতীয় পক্ষের বিশ্লেষণ/বিজ্ঞাপন সেবা ব্যবহার করে না।
-ভাড়ার ডেটা অ্যাপের ভেতরেই এনক্রিপ্ট করা অবস্থায় থাকে। ভবিষ্যতে অনলাইনে ডেটা আপডেট চালু হলে অ্যাপ শুধু এনক্রিপ্ট করা ডেটা ফাইল
-(HTTPS-এ) নামাবে; তখন সার্ভার স্বাভাবিকভাবে IP ঠিকানা দেখতে পারে। কোনো নতুন সেবা (যেমন Google Firebase) যুক্ত হলে এই নীতি আগে হালনাগাদ করা হবে।</p>
+<p>পথসাথী কোনো ব্যক্তিগত তথ্য সংগ্রহ করে না এবং কোনো বিশ্লেষণ (analytics) বা বিজ্ঞাপন সেবা ব্যবহার করে না।
+ভাড়ার ডেটা এনক্রিপ্ট করা অবস্থায় ইন্টারনেট (HTTPS) থেকে নামে এবং ফোনে এনক্রিপ্টেড থাকে।</p>
+<p><b>Google Firebase:</b> ডেটা খোলার চাবি অ্যাপে রাখা হয় না; প্রথমবার খুললে অ্যাপ Firebase Authentication (বেনামী, নাম/ইমেইল ছাড়া)
+ও Firebase App Check (Play Integrity) ব্যবহার করে যাচাই করে যে এটি আসল অ্যাপ, তারপর Cloud Firestore থেকে চাবিটি নেয়।
+এই সময় Google ডিভাইসের অখণ্ডতার সংকেত ও IP ঠিকানা প্রক্রিয়া করতে পারে (<a href="https://firebase.google.com/support/privacy">Firebase গোপনীয়তা</a>)।
+আমরা এই বেনামী পরিচয় দিয়ে কাউকে চিনি না, কোনো প্রোফাইল বানাই না।</p>
+<p><b>নতুন ভার্সন যাচাই:</b> সেটিংসে "নতুন ভার্সন আছে কি?" চাপলে অ্যাপ GitHub-এর পাবলিক রিলিজ পাতা দেখে; GitHub স্বাভাবিকভাবে IP ঠিকানা দেখতে পারে।</p>
 
 <h2>"ভুল জানান" রিপোর্ট</h2>
 <p>আপনি নিজে "ভুল জানান" থেকে পাঠালে তবেই রিপোর্ট আসে। এতে থাকে: ভুলের ধরন, আপনার লেখা (ঐচ্ছিক), কোন বাস/রুট/স্টপেজ নিয়ে রিপোর্ট,
@@ -35,10 +39,11 @@
 <p>অ্যাপটি সাধারণ জনগণের (১৩+) জন্য; শিশুদের থেকে জেনেশুনে কোনো তথ্য নেওয়া হয় না।</p>
 
 <h2>English summary</h2>
-<p>Version 1.0 of Vara Koto collects no personal or device data and uses no third-party analytics or ads. Fare data is stored
-encrypted inside the app. "Report a mistake" opens your own email app; a report is sent only if you choose to send it, and
-contains only what you type, which route/stop it is about, and the app/data version. If online data updates or other
-services (e.g. Google Firebase) are added later, this policy will be updated first. Use Settings → "Reset app data" or
+<p>PothShathi collects no personal data and uses no analytics or ads. Fare data is downloaded over HTTPS and stored encrypted on the device.
+The decryption key is not shipped in the app: on first launch the app uses anonymous Firebase Authentication and Firebase App Check
+(Play Integrity) to confirm it is the genuine app and then reads the key from Cloud Firestore; Google may process device-integrity
+signals and the IP address for this. Settings → "Check for a new version" reads the public GitHub releases page. "Report a mistake" opens your own email app; a report is sent only if you choose to send it, and
+contains only what you type, which route/stop it is about, and the app/data version. If more services are added later, this policy will be updated first. Use Settings → "Reset app data" or
 uninstall to delete everything stored on the device.</p>
 
 <h2>যোগাযোগ / Contact</h2>
